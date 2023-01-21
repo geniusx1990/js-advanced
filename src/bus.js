@@ -6,7 +6,12 @@ class Bus extends Vehicle {
     #maxPassengers;
     constructor(maxPassengers) {
         super(vin, color);
-        this.#maxPassengers = maxPassengers;
+
+        if (isNumber(maxPassengers)) {
+            this.#maxPassengers = maxPassengers
+        } else {
+            throw Error('you can not create Bus, please use number type for maxPassengers')
+        }
     }
 
 }

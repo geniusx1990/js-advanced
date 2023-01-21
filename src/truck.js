@@ -7,6 +7,12 @@ class Truck extends Vehicle {
 
     constructor(carryWeight) {
         super(vin, color);
-        this.#carryWeight = carryWeight;
+
+        if (isNumber(carryWeight)) {
+            this.#carryWeight = carryWeight
+        } else {
+            throw Error('you can not create Truck, please use number type for carryWeight')
+        }
+
     }
 }
