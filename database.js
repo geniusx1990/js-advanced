@@ -1,4 +1,4 @@
-const DATABASE = {
+export const DATABASE = {
     dealer: {
         title: 'Trucks & Buses Vilnius LTD'
     },
@@ -32,5 +32,3 @@ const DATABASE = {
         }
     ]
 }
-
-export default DATABASE;
